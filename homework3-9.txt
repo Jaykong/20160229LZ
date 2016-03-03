@@ -1,0 +1,32 @@
+3.9
+  1.//下列名称中那些是不合法的
+    Int, 6_05, _1312, _, A$
+
+  2.//对象     类            操作
+    pet     myCat         bark
+            neighboursDog eat
+                          playWithOwner
+                          protectOwner
+                          getSick
+
+  3.//程序清单
+    [myCat eat];
+    [myCat playWithOwner];
+    [myCat getSick];
+    [neighboursDog bark];
+    [neighboursDog protectOwner];
+
+  4.//类           操作
+    boat          startEngine
+    motorcycle    speedUp
+    automobile    speedDown
+                  turnLeft
+                  turnRight
+
+    //这三样物品为同一大类, 操作基本重叠.
+
+  5.//不知道
+
+  6.//在C语言中需要对对象中每一个类都要添加重复相同的操作过程, 而在OC中只需要添加一次就可以对所有的类进行操作.
+
+  7.//另附
