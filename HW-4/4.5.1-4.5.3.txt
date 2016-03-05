@@ -1,0 +1,15 @@
+4.5
+  1.非法常量
+    0x10.5 0X0GL .0001 1234uL 0xabcu
+
+  2.换算温度
+  int main {
+    float f = 27;
+    float result;
+    result = (f - 32) / 1.8 ;
+    NSLog (@"The weather is %g °F, %g °C.",f,result);
+    }
+
+  3.程序输出结果为
+    d = d
+ 
