@@ -9,47 +9,48 @@
 #import <Foundation/Foundation.h>
 
 
-//@interface X : NSObject {
-//    float _unknownX;
-//    float _result;
-//}
-//-(float)unknownX;
-//-(void)setX : (float)knowingX;
-//-(float)result;
-//-(void)getResult;
-//-(void)print;
-//@end
-//
-//
-//
-//@implementation X
-//-(float)result {
-//    return _result;
-//}
-//-(void)getResult {
-//    _result = (3 * _unknownX * _unknownX * _unknownX) - (5 * _unknownX * _unknownX) + 6;
-//}
-//-(float)unknownX{
-//    return _unknownX;
-//}
-//-(void)setX : (float)knowingX {
-//    _unknownX = knowingX;
-//}
-//
-//
-//-(void)print {
-//    NSLog(@"When X is %g, the answer of 3x^3 -5x^2 + 6 is %g.",_unknownX,_result);
-//}
-//@end
+@interface X : NSObject {   //4.5.4方法1
+    float _unknownX;
+    float _result;
+}
+-(float)unknownX;
+-(void)setX : (float)knowingX;
+-(float)result;
+-(void)getResult;
+-(void)print;
+@end
+
+
+
+@implementation X
+-(float)result {
+    return _result;
+}
+-(void)getResult {
+    _result = (3 * _unknownX * _unknownX * _unknownX) - (5 * _unknownX * _unknownX) + 6;
+}
+-(float)unknownX{
+    return _unknownX;
+}
+-(void)setX : (float)knowingX {
+    _unknownX = knowingX;
+}
+
+
+-(void)print {
+    NSLog(@"When X is %g, the answer of 3x^3 -5x^2 + 6 is %g.",_unknownX,_result);
+}
+@end
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-//        X *xpoly = [[X alloc] init];
-//        [xpoly setX:2.55];
-//        [xpoly print];
+        X *xpoly = [[X alloc] init];
+        [xpoly setX:2.55];
+        [xpoly getResult];
+        [xpoly print];
 
-        //4.5.4
+        //4.5.4方法2
         float aX = 2.55;
         float ar;
         ar = (3 * aX * aX * aX) -(5 * aX * aX) +6;
