@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
         Fraction *reFraction;
         [af setN:1 d:4];
         [bf setN:1 d:2];
-        reFraction = [af add:bf];
+        reFraction = [af minus:bf];
         [reFraction print];
     }
     return 0;

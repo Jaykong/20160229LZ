@@ -56,5 +56,29 @@
     [result reduce];
     return result;
 }
+-(Fraction *) minus: (Fraction *) f {
+    Fraction *result = [[Fraction alloc]init];
+    
+    result.numerator = numerator * f.denominator - denominator * f.numerator;
+    result.denominator = denominator * f.denominator;
+    [result reduce];
+    return result;
+}
+-(Fraction *) multiply: (Fraction *) f {
+    Fraction *result = [[Fraction alloc]init];
+    
+    result.numerator = (numerator * f.denominator) * (denominator * f.numerator);
+    result.denominator = denominator * f.denominator;
+    [result reduce];
+    return result;
+}
+-(Fraction *) divide: (Fraction *) f {
+    Fraction *result = [[Fraction alloc]init];
+    
+    result.numerator = (numerator * f.denominator) / (denominator * f.numerator);
+    result.denominator = denominator * f.denominator;
+    [result reduce];
+    return result;
+}
 
 @end

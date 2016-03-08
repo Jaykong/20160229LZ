@@ -12,8 +12,11 @@
 @property int denominator, numerator;
 -(void) setN:(int)n d:(int)d;
 -(Fraction *) add: (Fraction *) f;
+-(Fraction *) minus: (Fraction *) f;
+-(Fraction *) multiply: (Fraction *) f;
+-(Fraction *) divide: (Fraction *) f;
 -(double) convert2num;
 -(void) reduce;
--(void) print;
+-(void) print: (Boolean) zoidberg;
 @end
 
