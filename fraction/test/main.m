@@ -12,10 +12,13 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *fff = [[Fraction alloc]init];
-        fff.numerator = 20;
-        fff.denominator = 2;
-        [fff print];
+        Fraction *af = [[Fraction alloc]init];
+        Fraction *bf = [[Fraction alloc]init];
+        [af setN:1 d:4];
+        [bf setN:1 d:2];
+        [af add: bf];
+        [af reduce];
+        [af print];
     }
     return 0;
 }

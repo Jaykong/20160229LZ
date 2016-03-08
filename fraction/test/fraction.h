@@ -10,10 +10,9 @@
 
 @interface Fraction : NSObject
 @property int denominator, numerator;
--(void)setN:(int)n d:(int)d;
-
-//-(void) setNumerator: (int) n;
-//-(void) setDenominator: (int) d;
+-(void) setN:(int)n d:(int)d;
+-(void) add: (Fraction *) f;
+-(void) reduce;
 -(void) print;
 @end
 

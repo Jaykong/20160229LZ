@@ -9,19 +9,8 @@
 #import "fraction.h"
 
 @implementation Fraction
-//-(void) setNumerator: (int) n {
-//    numerator = n;
-//}
-//-(int) numerator {
-//    return  numerator;
-//}
-//-(void) setDenominator: (int) d {
-//    denominator = d;
-//}
-//-(int) denominator {
-//    return denominator;
-//}
--(void)setN:(int)n d:(int)d {
+
+-(void) setN:(int)n d:(int)d {
     _numerator = n;
     _denominator = d;
 }
@@ -38,5 +27,19 @@
         }
     }
 }
-
+-(void) add: (Fraction *) f {
+    _numerator = _numerator * f.denominator + _denominator * f.numerator;
+    _denominator = _denominator * f.denominator;
+}
+-(void) reduce {
+    int u = _numerator;
+    int v = _denominator;
+    int temp;
+    while (v != 0) {
+        temp = u % v;
+        v = temp;
+    }
+    _numerator /= u;
+    _denominator /= u;
+}
 @end
