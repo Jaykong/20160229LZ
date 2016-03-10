@@ -1,3 +1,9 @@
 ClassB与ClassB2为同级别关系, 他们的父类都是ClassA
-NSObject->ClassA->ClassB->ClassC
-       ⌞->ClassB2
+
+NSObject
+ ↓
+ClassA
+ ↓
+ClassB  ClassB2
+ ↓
+ClassC
