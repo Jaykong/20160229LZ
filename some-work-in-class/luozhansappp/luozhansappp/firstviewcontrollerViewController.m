@@ -32,16 +32,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    questions = @[@"1x1=",@"1+1=",@"1/0="];
-    answers = @[@"1",@"2",@"ERROR"];
-    current = 0;
+    questions            = @[@"1x1=",@"1+1=",@"1/0="];
+    answers              = @[@"1",@"2",@"ERROR"];
+    current              = 0;
     _questionsLabel.text = questions[current];
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Dispose of any resources that can be recread.
 }
 
 /*
