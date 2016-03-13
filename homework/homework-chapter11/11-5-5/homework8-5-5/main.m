@@ -7,14 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Circle.h"
-#import "Triangle.h"
 #import "Rectangle.h"
+#import "Square.h"
+
+
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        Square *sq = [[Square alloc] init];
+        [sq setSide:6];
         
+        NSLog(@"%i",[sq area]);
+        NSLog(@"%i",[sq perimeter]);
     }
     return 0;
 }
