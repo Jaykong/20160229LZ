@@ -8,11 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^BLOCK) (void);   //声明一个块 = void (^blocktest) ();
+
+
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
-        void (^blocktest) (void);   //声明一个块 = void (^blocktest) ();
+        BLOCK blocktest;
+        
         blocktest= ^() {            //定义这个块
             NSLog(@"hello");
         };

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RPK-8S-Ldc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y2C-uc-lk5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tS8-KQ-D9v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-aH-ZE0">
+                                <rect key="frame" x="20" y="40" width="560" height="166.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OML-Ah-bic">
+                                <rect key="frame" x="20" y="413" width="560" height="166.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W48-KX-LcN">
+                                <rect key="frame" x="20" y="226.5" width="560" height="167"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OML-Ah-bic" firstAttribute="height" secondItem="VRl-aH-ZE0" secondAttribute="height" id="13l-wE-B9W"/>
+                            <constraint firstItem="W48-KX-LcN" firstAttribute="top" secondItem="VRl-aH-ZE0" secondAttribute="bottom" constant="20" id="7mX-g1-AGo"/>
+                            <constraint firstAttribute="trailing" secondItem="VRl-aH-ZE0" secondAttribute="trailing" constant="20" id="8Vi-9J-xoT"/>
+                            <constraint firstAttribute="trailing" secondItem="W48-KX-LcN" secondAttribute="trailing" constant="20" id="GeP-XG-a32"/>
+                            <constraint firstItem="OML-Ah-bic" firstAttribute="centerX" secondItem="VRl-aH-ZE0" secondAttribute="centerX" id="VXV-m3-xMA"/>
+                            <constraint firstItem="OML-Ah-bic" firstAttribute="top" secondItem="W48-KX-LcN" secondAttribute="bottom" constant="19.5" id="Ywq-hU-gKQ"/>
+                            <constraint firstItem="W48-KX-LcN" firstAttribute="centerX" secondItem="VRl-aH-ZE0" secondAttribute="centerX" id="dB2-iu-kfm"/>
+                            <constraint firstAttribute="trailing" secondItem="OML-Ah-bic" secondAttribute="trailing" constant="20" id="h7H-bd-4aF"/>
+                            <constraint firstItem="VRl-aH-ZE0" firstAttribute="leading" secondItem="tS8-KQ-D9v" secondAttribute="leading" constant="20" id="ibV-pS-3rb"/>
+                            <constraint firstItem="VRl-aH-ZE0" firstAttribute="top" secondItem="RPK-8S-Ldc" secondAttribute="bottom" constant="20" id="jMb-ya-wmB"/>
+                            <constraint firstItem="Y2C-uc-lk5" firstAttribute="top" secondItem="OML-Ah-bic" secondAttribute="bottom" constant="20" id="mOf-Uk-q0F"/>
+                            <constraint firstItem="W48-KX-LcN" firstAttribute="leading" secondItem="tS8-KQ-D9v" secondAttribute="leading" constant="20" id="vID-gP-K0r"/>
+                            <constraint firstItem="W48-KX-LcN" firstAttribute="height" secondItem="VRl-aH-ZE0" secondAttribute="height" id="yqV-xU-CcN"/>
+                            <constraint firstItem="OML-Ah-bic" firstAttribute="leading" secondItem="tS8-KQ-D9v" secondAttribute="leading" constant="20" id="yyx-ra-hjC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="320"/>
+        </scene>
+    </scenes>
+</document>
