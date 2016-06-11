@@ -1,0 +1,15 @@
+//
+//  Director.h
+//  16-4-22-抽象工厂
+//
+//  Created by Uno on 2016/4/22.
+//  Copyright © 2016年 BrookZero. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "Character.h"
+@interface Director : NSObject
+@property (nonatomic, strong) Character * character;
++(Character *)enemy;
++(Character *)player;
+@end

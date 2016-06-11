@@ -37,23 +37,19 @@
     for (addressCard *thecard in book) NSLog(@"%@ %@, 📞%li  %@",thecard.Sname,thecard.Lname,thecard.phone,thecard.email);
 }
 
--(AddressBook *) lookup: (NSString *) theName
-{
-    AddressBook *results = [[AddressBook alloc] initWithName: @"lookup results"];
-    
-    for ( addressCard *nextCard in book ) {
-        if ( [nextCard.Sname rangeOfString: theName options: NSCaseInsensitiveSearch].location != NSNotFound)
-            [results addCard: nextCard];
-        else if ( [nextCard.Lname rangeOfString: theName options: NSCaseInsensitiveSearch].location != NSNotFound)
-            [results addCard: nextCard];
-        else if ( [nextCard.email rangeOfString: theName options: NSCaseInsensitiveSearch].location != NSNotFound)
-            [results addCard: nextCard];
-    }
-    
-    if (results.book.count == 0)
-        return nil;
-    
-    return results;
+-(NSArray *) lookup : (NSString *) aName {
+    __block NSRange range;
+    NSIndexSet *result = [book indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop)
+                          {
+                              range = [[obj Sname] rangeOfString:aName];
+                              if (range.location != NSNotFound) return YES;
+                              else return 0;
+                          }];
+    if ([result count] != 0)  {
+        NSArray *myArray = [book objectsAtIndexes:result];
+        return myArray ;  
+    }  
+    else return nil;
 }
 
 @end

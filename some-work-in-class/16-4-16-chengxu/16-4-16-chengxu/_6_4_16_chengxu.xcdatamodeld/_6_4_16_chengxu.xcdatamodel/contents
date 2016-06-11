@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Paperinfo" representedClassName="Paperinfo" syncable="YES">
+        <attribute name="addtime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paperid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userRecord" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Paperinfo" inverseName="userRecord" inverseEntity="Paperinfo" syncable="YES"/>
+    </entity>
+    <entity name="PaperinfoRecord" representedClassName="PaperinfoRecord" syncable="YES">
+        <attribute name="answered" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="paperid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="paperInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PaperinfoRecord" inverseName="paperInfo" inverseEntity="PaperinfoRecord" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Paperinfo" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="PaperinfoRecord" positionX="-54" positionY="-9" width="128" height="90"/>
+    </elements>
+</model>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question hasimg=“0">
+<id>2015012115523001882030d-bff093e5b7f8</id>
+<headingid>2015012115523001784379d-cacfc0562bef</headingid>
+<sort>1</sort>
+<type>11</type>
+<score>0</score>
+<options><option sort="A">A.砌体的强度</option>
+<option sort="B">B.局部抗压强度</option>
+<option sort="C">C.高厚比</option>
+<option sort="D">D.砖的强度等级</option></options>
+<answer>C</answer>
+<title>保证砖砌体结构房屋的墙和柱稳定性的主要参数是(  )。</title>
+<parse>P26，墙体作为受压构件的验算分三个方面：&#13;
+1、稳定新，通过高厚比验算满足稳定性要求；&#13;
+2、墙体极限状态承载力验算；&#13;
+3、受压构件在梁、柱等承压部位处的局部受压承载力验算。【感谢考试100用户“阅卷老师”为本题提供解析】
+</parse>
+</question>

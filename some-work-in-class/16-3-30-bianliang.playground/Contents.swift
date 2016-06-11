@@ -99,3 +99,61 @@ func funcName(p1:Int,p2:Int) ->Int {
     return re
 }
 let re = funcName(13032131, p2: 3123123)
+
+
+
+let natureNumber = 12
+switch natureNumber {
+case 11,12,13,14,15:
+    print("11,15")
+    fallthrough //继续执行下一步
+case 1,2,3,4,5,6,7,8,9,10:
+    print("1...10")
+default:
+    break
+}
+
+for number in 1...50 {
+//    switch number {
+//    case 1:
+//        print("1")
+//    default:
+//        break
+        if number == 9 {
+            continue
+        }
+    print(number)
+    }
+
+
+
+var labelnumber = 3
+label:while labelnumber > 4 {
+    switch labelnumber {
+    case 3:
+        labelnumber += 1
+        break
+    default:
+        break
+    }
+}
+
+let tuple1 = ("lily",4,"female")
+tuple1.0
+tuple1.1
+
+let point:(Int,Int) = (10,12)
+switch point {
+case (11,11):
+    print("1111")
+case (_,12):
+    print("y=12")
+case (10,_):
+    print("x=12")
+case let(x,y) where x == y:
+    print(x,y)
+case let(x,y):
+    print(x,y)
+default:
+    print(point.0,point.1)
+}

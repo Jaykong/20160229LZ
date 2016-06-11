@@ -19,6 +19,6 @@
 -(NSUInteger) entries;
 -(void) list;
 
--(AddressBook *) lookup: (NSString *) theName;
+-(NSArray *) lookup : (NSString *) aName;
 
 @end

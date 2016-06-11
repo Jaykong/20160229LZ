@@ -33,6 +33,6 @@
     return phone;
 }
 -(void) printCard{
-    NSLog(@"test");
+    NSLog(@"%@ %@, 📞%li  %@",self.Sname,self.Lname,self.phone,self.email);
 }
 @end

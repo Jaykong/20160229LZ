@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chg-TB-NuQ" userLabel="Customtextfield:number" customClass="customtextfield">
+                                <rect key="frame" x="10" y="70" width="580" height="30"/>
+                                <color key="backgroundColor" red="0.69124239683151245" green="0.93380498886108398" blue="0.69371455907821655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RLY-yg-etW"/>
+                                    <outlet property="st1" destination="0R6-8G-0Y8" id="DmO-Yp-Slx"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4t-uD-ObO" userLabel="Customtextfield:normal" customClass="customtextfield">
+                                <rect key="frame" x="10" y="150" width="580" height="30"/>
+                                <color key="backgroundColor" red="0.77030676603317261" green="0.83344906568527222" blue="0.9456903338432312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="AZP-hS-qOP"/>
+                                    <outlet property="st1" destination="sKP-8j-Kqb" id="4y8-qi-GPZ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Chg-TB-NuQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="246-Pd-B5E"/>
+                            <constraint firstItem="Chg-TB-NuQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="MS4-PY-JRv"/>
+                            <constraint firstAttribute="trailing" secondItem="Chg-TB-NuQ" secondAttribute="trailing" constant="10" id="Syb-8g-N5Y"/>
+                            <constraint firstAttribute="trailing" secondItem="G4t-uD-ObO" secondAttribute="trailing" constant="10" id="jLP-Tr-zSg"/>
+                            <constraint firstItem="G4t-uD-ObO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="oBB-18-Avj"/>
+                            <constraint firstItem="G4t-uD-ObO" firstAttribute="top" secondItem="Chg-TB-NuQ" secondAttribute="bottom" constant="50" id="tMu-hs-SHB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="0R6-8G-0Y8" userLabel="NumberArSt" customClass="NumberArst"/>
+                <customObject id="sKP-8j-Kqb" userLabel="NormalArSt" customClass="NormalArSt"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="248"/>
+        </scene>
+    </scenes>
+</document>

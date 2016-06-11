@@ -42,26 +42,38 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%lu address cards already.",[book1 entries]);
         
         NSLog(@"有没有叫Three的?");
-        card3 = [ book1 lookup:@"three"];
-        if (card3 != nil)
-            [card3 printCard];
+        NSString *card4 = @"Three" ;
+        NSArray *checkoutcard4 = [book1 lookup:card4];
+        if (checkoutcard4 != nil) {
+            for (addressCard *card4 in checkoutcard4 ) {
+                [card4 printCard];
+            }
+        }
+        else
+            NSLog(@"并没有!");
         
         NSLog(@"有没有叫Four的?");
-        addressCard *card4;
-        card4 = [ book1 lookup:@"four"];
-        if (card4 != nil)
-            [card4 printCard];
+        NSString *card5 = @"Four" ;
+        NSArray *checkoutcard5 = [book1 lookup:card5];
+        if (checkoutcard5 != nil) {
+            for (addressCard *card5 in checkoutcard5 ) {
+                [card5 printCard];
+            }
+        }
         else
             NSLog(@"并没有!");
         
         NSLog(@"有没有叫Number的?");
-        addressCard *card5;
-        card5 = [ book1 lookup:@"number"];
-        if (card5 != nil)
-            [card5 printCard];
+        NSString *card6 = @"Number" ;
+        NSArray *checkoutcard6 = [book1 lookup:card6];
+        if (checkoutcard6 != nil) {
+            for (addressCard *card6 in checkoutcard6 ) {
+                [card6 printCard];
+            }
+        }
         else
             NSLog(@"并没有!");
-        }
-    
+        
+    }
     return 0;
 }
